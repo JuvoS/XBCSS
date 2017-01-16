@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>xbcss-fresh</title>
+		<link rel="stylesheet" href="../css/xb.css" />
+	</head>
+	<body>
+		<section class="xb-refresh-content">
+			<div class="xb-content">
+				<div id="demo">
+			        <div class="xb-card-list">
+			            <div class="xb-card-list-header">
+			                卡片布局头部区域
+			            </div>
+			            <div class="xb-card-list-content-padded">
+			                内容区域，卡片列表布局样式可以实现APP中常见的各类样式
+			            </div>
+			            <div class="xb-card-list-footer">
+			                底部区域
+			            </div>
+			        </div>
+			        <div class="xb-card-list">
+			            <div class="xb-card-list-header">
+			                卡片布局头部区域
+			            </div>
+			            <div class="xb-card-list-content-padded">
+			                内容区域，卡片列表布局样式可以实现APP中常见的各类样式
+			            </div>
+			            <div class="xb-card-list-footer">
+			                底部区域
+			            </div>
+			        </div>
+			        <div class="xb-card-list">
+			            <div class="xb-card-list-header">
+			                卡片布局头部区域
+			            </div>
+			            <div class="xb-card-list-content-padded">
+			                内容区域，卡片列表布局样式可以实现APP中常见的各类样式
+			            </div>
+			            <div class="xb-card-list-footer">
+			                底部区域
+			            </div>
+			        </div>
+			        <div class="xb-card-list">
+			            <div class="xb-card-list-header">
+			                卡片布局头部区域
+			            </div>
+			            <div class="xb-card-list-content-padded">
+			                内容区域，卡片列表布局样式可以实现APP中常见的各类样式
+			            </div>
+			            <div class="xb-card-list-footer">
+			                底部区域
+			            </div>
+			        </div>
+			        <div class="xb-card-list">
+			            <div class="xb-card-list-header">
+			                卡片布局头部区域
+			            </div>
+			            <div class="xb-card-list-content-padded">
+			                内容区域，卡片列表布局样式可以实现APP中常见的各类样式
+			            </div>
+			            <div class="xb-card-list-footer">
+			                底部区域
+			            </div>
+			        </div>
+			        <div class="xb-card-list">
+			            <div class="xb-card-list-header">
+			                卡片布局头部区域
+			            </div>
+			            <div class="xb-card-list-content-padded">
+			                内容区域，卡片列表布局样式可以实现APP中常见的各类样式
+			            </div>
+			            <div class="xb-card-list-footer">
+			                底部区域
+			            </div>
+			        </div>
+			        <div class="xb-card-list">
+			            <div class="xb-card-list-header">
+			                卡片布局头部区域
+			            </div>
+			            <div class="xb-card-list-content-padded">
+			                内容区域，卡片列表布局样式可以实现APP中常见的各类样式
+			            </div>
+			            <div class="xb-card-list-footer">
+			                底部区域
+			            </div>
+			        </div>
+		        </div>
+	        </div>
+	    </section>
+	</body>
+	<script src="../js/xb.js"></script>
+	<script type="text/javascript">
+		var pullRefresh = new xbPullToRefresh({
+			container: document.querySelector('.xb-refresh-content'),
+			triggerDistance: 100
+		},function(ret){
+			if(ret.status=="success"){
+				setTimeout(function(){
+					var wrap = document.getElementById("demo")
+					var lis = wrap.querySelectorAll('.xb-card-list');
+					for (var i = lis.length, length = i + 10; i < length; i++) {
+						var html = '<div class="xb-card-list">'+
+					            '<div class="xb-card-list-header">'+
+					                '卡片布局头部区域'+(i+1)+''+
+					            '</div>'+
+					            '<div class="xb-card-list-content-padded">'+
+					                '内容区域，卡片列表布局样式可以实现APP中常见的各类样式'+
+					            '</div>'+
+					            '<div class="xb-card-list-footer">'+
+					                '底部区域'+
+					            '</div>'+
+					        '</div>';
+						wrap.insertAdjacentHTML('afterbegin', html);
+					}
+					pullRefresh.cancelLoading(); //刷新成功后调用此方法隐藏
+				},1500)
+			}
+		})
+	</script>
+</html>

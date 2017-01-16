@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>xbcss-container</title>
+		<link rel="stylesheet" href="../css/xb.css" />
+	</head>
+	<body>
+		<div class="xb-content">
+			<div class="xb-bg-success">xb-content</div>
+		</div>
+		<div class="xb-content">
+			<div class="xb-container">
+				<div class="xb-bg-danger">xb-content -> xb-container 不含边距</div>
+			</div>
+		</div>
+		<div class="xb-content">
+			<div class="xb-container">
+				<div class="xb-container-fluid">
+					<div class="xb-bg-purple">xb-content -> xb-container -> xb-container-fluid 带边距margin padding</div>
+				</div>
+			</div>
+		</div>
+		<div class="xb-content">
+			<div class="xb-container">
+				<div class="xb-container-fluid">
+					<div class="xb-row">
+						<div class="xb-bg-primary">xb-content -> xb-container -> xb-container-fluid -> xb-row带边距margin padding 抵消left right</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="xb-content">
+			<div class="xb-container">
+				<div class="xb-container-fluid">
+					<div class="xb-row-padded">
+						<div class="xb-bg-warning">xb-content -> xb-container -> xb-container-fluid -> xb-row-padded 带边距margin padding 抵消left right</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="xb-content">
+			<div class="xb-container">
+				<div class="xb-container-fluid">
+					<div class="xb-row-padded">
+						<div class="xb-col-xs-12">
+							<div class="xb-bg-indigo">
+								xb-content -> xb-container -> xb-container-fluid
+								 -> xb-row-padded -> xb-col-xs-12
+							</div>
+							<div class="xb-col-xs-4">
+								<div class="xb-bg-pink">
+								xb-content -> xb-container -> xb-container-fluid
+								 -> xb-row-padded -> xb-col-xs-12 -> xb-col-xs-4
+								</div>
+							</div>
+							<div class="xb-col-xs-4">
+								<div class="xb-bg-pink">
+								xb-content -> xb-container -> xb-container-fluid
+								 -> xb-row-padded -> xb-col-xs-12 -> xb-col-xs-4
+								</div>
+							</div>
+							<div class="xb-col-xs-4">
+								<div class="xb-bg-pink">
+								xb-content -> xb-container -> xb-container-fluid
+								 -> xb-row-padded -> xb-col-xs-12 -> xb-col-xs-4
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="xb-content">
+			<div class="xb-container">
+				<div class="xb-container-fluid">
+					<div class="xb-row-padded">
+						<div class="xb-col-xs-2">
+							<div class="xb-bg-pink">
+							xb-content -> xb-container -> xb-container-fluid
+							 -> xb-row-padded -> xb-col-xs-12 -> xb-col-xs-4
+							</div>
+						</div>
+						<div class="xb-col-xs-8">
+							<div class="xb-bg-pink">
+							xb-content -> xb-container -> xb-container-fluid
+							 -> xb-row-padded -> xb-col-xs-12 -> xb-col-xs-4
+							</div>
+						</div>
+						<div class="xb-col-xs-2">
+							<div class="xb-bg-pink">
+							xb-content -> xb-container -> xb-container-fluid
+							 -> xb-row-padded -> xb-col-xs-12 -> xb-col-xs-4
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="xb-content">
+			<div class="xb-container">
+				<div class="xb-container-fluid">
+					<div class="xb-row-padded">
+						<div class="xb-col-xs-8 xb-col-push-2">
+							<div class="xb-bg-pink">
+							xb-content -> xb-container -> xb-container-fluid
+							 -> xb-row-padded -> xb-col-xs-12 -> xb-col-xs-4
+							</div>
+						</div>
+						<div class="xb-col-xs-2 xb-col-push-2">
+							<div class="xb-bg-pink">
+							xb-content -> xb-container -> xb-container-fluid
+							 -> xb-row-padded -> xb-col-xs-12 -> xb-col-xs-4
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="xb-content">
+			<div class="xb-container">
+				<div class="xb-container-fluid">
+					<div class="xb-row-padded">
+						<div class="xb-col-xs-8 xb-col-push-2">
+							<div class="xb-bg-pink">
+							xb-content -> xb-container -> xb-container-fluid
+							 -> xb-row-padded -> xb-col-xs-12 -> xb-col-xs-4
+							</div>
+						</div>
+						<div class="xb-col-xs-2 xb-col-pull-8">
+							<div class="xb-bg-pink">
+							xb-content -> xb-container -> xb-container-fluid
+							 -> xb-row-padded -> xb-col-xs-12 -> xb-col-xs-4
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="xb-content">
+			<div class="xb-container">
+				<div class="xb-container-fluid">
+					<div class="xb-row-padded">
+						<div class="xb-col-xs-8 xb-col-offset-2">
+							<div class="xb-bg-pink">
+							xb-content -> xb-container -> xb-container-fluid
+							 -> xb-row-padded -> xb-col-xs-12 -> xb-col-xs-4
+							</div>
+						</div>
+						<div class="xb-col-xs-2">
+							<div class="xb-bg-pink">
+							xb-content -> xb-container -> xb-container-fluid
+							 -> xb-row-padded -> xb-col-xs-12 -> xb-col-xs-4
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="xb-content">
+			<div class="xb-content-padded">
+				<div class="xb-bg-pink">xb-content-> xb-content-padded 带边距margin</div>
+			</div>
+		</div>
+	</body>
+</html>

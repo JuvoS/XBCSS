@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>xbcss-list</title>
+		<link rel="stylesheet" href="../css/xb.css" />
+	</head>
+	<body>
+		<div class="xb-content">
+			<div class="xb-container">
+				<div class="xb-content-padded">
+					<ul class="xb-list xb-form-list">
+				        <li class="xb-list-header">带有输入框</li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-label">
+				                    Text
+				                </div>
+				                <div class="xb-list-item-input">
+				                    <input type="text" placeholder="Name">
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-label">
+				                    Password
+				                </div>
+				                <div class="xb-list-item-input">
+				                    <input type="password" placeholder="Password">
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-label">
+				                    Number
+				                </div>
+				                <div class="xb-list-item-input">
+				                    <input type="number" placeholder="Number">
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-label">
+				                    Radio
+				                </div>
+				                <div class="xb-list-item-input">
+				                    <label><input class="xb-radio" type="radio" name="demo1" checked> 选项一</label>
+				                    <label><input class="xb-radio" type="radio" name="demo1"> 选项二</label>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-label">
+				                    Select
+				                </div>
+				                <div class="xb-list-item-input">
+				                    <select>
+				                        <option>Option1</option>
+				                        <option>Option2</option>
+				                        <option>Option3</option>
+				                    </select>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-label">
+				                    Switch
+				                </div>
+				                <div class="xb-list-item-input">
+				                    <input type="checkbox" class="xb-switch" checked>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-label">
+				                    Range
+				                </div>
+				                <div class="xb-list-item-input">
+				                    <div class="xb-range">
+				                        <input type="range" class="xb-range" value="30" max="100" min="1" step="1" id="range" />
+				                    </div>
+				                </div>
+				            </div>
+				        </li>
+			        </ul>
+			        
+			        <ul class="xb-list xb-select-list">
+				        <li class="xb-list-header">带有单选或多选框的列表</li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-label">
+				                <input class="xb-radio" type="radio" name="radio" checked>
+				            </div>
+				            <div class="xb-list-item-inner">
+				                这是一个列表项
+				                <div class="xb-list-item-text">
+				                    这里是内容区域，新版中的列表布局可以很轻松的帮助开发者完成常见列表样式。
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <label><input class="xb-radio" type="radio" name="radio" checked> 这是一个列表项</label>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <label><input class="xb-radio" disabled type="radio" name="radio"> 这是一个列表项</label>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <label><input class="xb-radio" type="radio" name="radio"> 这是一个列表项</label>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <label><input class="xb-radio" type="radio" name="radio2" checked> 选项一</label>
+				                <label><input class="xb-radio" type="radio" name="radio2"> 选项二</label>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <label><input class="xb-checkbox" type="radio" name="checkbox" checked> 这是一个列表项</label>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <label><input class="xb-checkbox" disabled checked="" type="radio" name="checkbox"> 禁止选择</label>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <label><input class="xb-checkbox" type="radio" name="checkbox"> 这是一个列表项</label>
+				            </div>
+				        </li>
+				    </ul>
+				    <ul class="xb-list xb-list-in">
+				        <li class="xb-list-header">
+				            带有右侧箭头
+				        </li>
+				        <li class="xb-list-item xb-list-item-middle">
+				            <div class="xb-list-item-inner xb-list-item-arrow">
+				                <div class="xb-list-item-title">Item1</div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner xb-list-item-arrow">
+				                <div class="xb-list-item-title">Item2</div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner xb-list-item-arrow">
+				                <div class="xb-list-item-title">Item3</div>
+				            </div>
+				        </li>
+				    </ul>
+				    
+				    <ul class="xb-list xb-list-in">
+				        <li class="xb-list-header">
+				            带有其他元素的列表
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-title">text</div>
+				                <div class="xb-list-item-right">信息</div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-title">label</div>
+				                <div class="xb-list-item-right">
+				                    <div class="xb-label xb-label-info">标签</div>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner xb-list-item-arrow">
+				                <div class="xb-list-item-title">dot</div>
+				                <div class="xb-list-item-right">
+				                    <div class="xb-dot" style="position:relative;top:0; right:0"></div>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner xb-list-item-arrow">
+				                <div class="xb-list-item-title">badge</div>
+				                <div class="xb-list-item-right">
+				                    <div class="xb-badge" style="position:relative;top:0; left:0">88</div>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner xb-list-item-arrow">
+				                <div class="xb-list-item-title">badge</div>
+				                <div class="xb-list-item-right">
+				                    <div class="xb-badge" style="position:relative;top:0; left:0"></div>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner xb-list-item-arrow">
+				                <div class="xb-list-item-title">progress</div>
+				                <div class="xb-list-item-right">
+				                    <div class="xb-progress xb-progress xb-progress-xxs" style="width:5rem;">
+				                        <div class="xb-progress-bar" style="width: 60%;"></div>
+				                    </div>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner xb-list-item-arrow">
+				                <div class="xb-list-item-title">range</div>
+				                <div class="xb-list-item-right">
+				                    <div class="xb-range">
+				                        <input type="range" class="xb-range" value="30" max="100" min="1" step="1" id="range" />
+				                    </div>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-title">switch</div>
+				                <div class="xb-list-item-right">
+				                    <input type="checkbox" class="xb-switch" checked>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-title">radio</div>
+				                <div class="xb-list-item-right">
+				                    <input type="radio" class="xb-radio" checked>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-title">checkbox</div>
+				                <div class="xb-list-item-right">
+				                    <input type="checkbox" class="xb-checkbox" checked>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-list-item-inner">
+				                <div class="xb-list-item-title">bar-btn</div>
+				                <div class="xb-list-item-right">
+				                    <div class="xb-bar xb-bar-btn xb-bar-btn-sm" style="width:60%;float:right">
+				                        <div class="xb-bar-btn-item">
+				                            <i class="xb-iconfont xb-icon-minus"></i>
+				                        </div>
+				                        <div class="xb-bar-btn-item">
+				                            <input type="number" class="xb-input xb-text-center" value="1" >
+				                        </div>
+				                        <div class="xb-bar-btn-item">
+				                            <i class="xb-iconfont xb-icon-plus"></i>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				        </li>
+				    </ul>
+				    
+				    <ul class="xb-list xb-media-list">
+				        <li class="xb-list-header">
+				            图文列表
+				        </li>
+				        <li class="xb-list-item xb-list-item-arrow">
+				            <div class="xb-media-list-item-inner">
+				                <div class="xb-list-item-inner">
+				                    <div class="xb-list-item-text">
+				                        <div class="xb-list-item-title">带有媒体的列表一</div>
+				                        <div class="xb-list-item-right">08:00</div>
+				                    </div>
+				                    <div class="xb-list-item-text xb-ellipsis-2">
+				                        这里是内容区域，新版中的列表布局可以很轻松的帮助开发者完成常见列表样式。
+				                    </div>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-media-list-item-inner">
+				                <div class="xb-list-item-media">
+				                    <img src="../img/shot-0.jpg">
+				                </div>
+				                <div class="xb-list-item-inner">
+				                    <div class="xb-list-item-text">
+				                        <div class="xb-list-item-title">带有媒体的列表二</div>
+				                        <div class="xb-list-item-right">08:00</div>
+				                    </div>
+				                    <div class="xb-list-item-text">
+				                        在下方我们加入了xb-info信息条
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="xb-info" style="padding-top:0">
+				                <div class="xb-info-item">
+				                    <img src="../img/shot-0.jpg" style="width:1rem" class="xb-img-round" /><span class="xb-margin-l-5">流浪男</span>
+				                    </div>
+				                <div class="xb-info-item">2015-07-14 10:31</div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-media-list-item-inner">
+				                <div class="xb-list-item-media">
+				                    <img src="../img/shot-0.jpg">
+				                </div>
+				                <div class="xb-list-item-inner">
+				                    <div class="xb-list-item-text">
+				                        <div class="xb-list-item-title">带有媒体的列表二</div>
+				                        <div class="xb-list-item-right">08:00</div>
+				                    </div>
+				                    <div class="xb-list-item-text">
+				                        这里是内容区域，新版中的列表布局可以很轻松的帮助开发者完成常见列表样式。
+				                    </div>
+				                    <div class="xb-info xb-margin-t-5" style="padding:0">
+				                        <div class="xb-info-item">
+				                            <img src="../img/shot-1.jpg" style="width:1rem" class="xb-img-round" /><span class="xb-margin-l-5">流浪男</span>
+				                            </div>
+				                        <div class="xb-info-item">2015-07-14 10:31</div>
+				                    </div>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="xb-list-item">
+				            <div class="xb-media-list-item-inner">
+				                <div class="xb-list-item-inner">
+				                    <div class="xb-list-item-title">媒体项右侧显示</div>
+				                    <div class="xb-list-item-text">
+				                        这里是内容区域，新版中的列表布局可以很轻松的帮助开发者完成常见列表样式。
+				                    </div>
+				                </div>
+				                <div class="xb-list-item-media">
+				                    <img src="../img/shot-0.jpg">
+				                </div>
+				            </div>
+				        </li>
+				    </ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

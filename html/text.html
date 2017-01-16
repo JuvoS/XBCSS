@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>xbcss-text</title>
+		<link rel="stylesheet" href="../css/xb.css" />
+	</head>
+	<body>
+		<div>
+			<p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p>
+			<p class="xb-font-size-14 xb-color-default">xb-color-default</p>
+			<p class="xb-font-size-14 xb-color-white">xb-color-white</p>
+			<p class="xb-font-size-14 xb-color-info">xb-color-info</p>
+			<p class="xb-font-size-14 xb-color-primary">xb-color-primary</p>
+			<p class="xb-font-size-14 xb-color-success">xb-color-success</p>
+			<p class="xb-font-size-14 xb-color-warning">xb-color-warning</p>
+			<p class="xb-font-size-14 xb-color-danger">xb-color-danger</p>
+			<p class="xb-font-size-14 xb-color-pink">xb-color-pink</p>
+			<p class="xb-font-size-14 xb-color-purple">xb-color-purple</p>
+			<p class="xb-font-size-14 xb-color-indigo">xb-color-indigo</p>
+		</div>
+		<div>
+			<div class="xb-warning">
+				<label>xb-warning label</label>
+				<input class="xb-input" value="xb-input" />
+			</div>
+			<div class="xb-success">
+				<label>xb-success label</label>
+				<input class="xb-input" value="xb-input" />
+			</div>
+		</div>
+		<div>
+			<p>
+				<h1><span class="xb-font-size-18 xb-iconfont xb-icon-x"></span></h1>
+				<span class="xb-iconfont xb-icon-menu"></span>
+			</p>
+		</div>
+		<div>
+			<div class="xb-show" id="xb-show">xb-show</div>
+			<button onclick="showChange();">隐藏</button>
+		</div>
+		<div>
+			<div class="xb-pull-left">xb-pull-left</div>
+			<div class="xb-pull-right">xb-pull-right</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+	var show_flag=0;
+	function showChange(){
+		document.getElementById("xb-show").removeAttribute("class");
+		if(show_flag==0){
+			document.getElementById("xb-show").setAttribute("class","xb-hide");
+			show_flag=1;
+		}else{
+			document.getElementById("xb-show").setAttribute("class","xb-show");
+			show_flag=0;
+		}
+	}
+	</script>
+</html>
