@@ -1,0 +1,270 @@
+ /*body背景色及色值*/
+ body {
+ 	color: #d1d1d1;
+	background-color: #1a1a1a;
+}
+ p {
+	color: #757575;
+}
+a {
+	color: #0062cc;
+}
+.xb-text-default {
+	color: #212121 !important;
+}
+.xb-bg-default {
+	background-color: #f5f5f5 !important;
+}
+ /*label*/
+.xb-label {
+	padding: 0.3em 0.35em;
+	font-size: 0.6rem;
+	color: #616161;
+    background-color: #e0e0e0;
+}
+.xb-label-outlined {
+	border: 1px solid #d9d9d9;
+	background-color: transparent;
+}
+.xb-label .xb-iconfont {
+	font-size: 0.6rem;
+}
+/*角标*/
+.xb-badge {
+	color: #ffffff;
+    background-color: #ff2600;
+}
+/*按钮*/
+.xb-btn {
+	color: #212121;
+	background: #e0e0e0;
+}
+.xb-btn:active {
+	color: #212121;
+	background-color: #bdbdbd;
+}
+.xb-btn-outlined {
+	background: transparent;
+	border: 1px solid #bdbdbd;
+}
+.xb-btn-outlined:active {
+	background: transparent;
+}
+/*tab*/
+.xb-tab .xb-tab-item {
+	height: 2.2rem;
+    line-height: 2.2rem;
+    font-size: 0.7rem;
+	color: #212121;
+    background-color: #ffffff;
+}
+/*tab选中时样式*/
+.xb-tab .xb-tab-item.active {
+    color: #039be5;
+    border-bottom: 2px solid #039be5;
+}
+/*单选选中样式*/
+.xb-radio:checked,
+.xb-radio.xb-checked {
+	background-color: #edfb3f;
+    border: solid 1px #edfb3f;
+}
+/* 单选选中时中间对号颜色*/
+.xb-radio:checked:before,
+.xb-radio.xb-checked:before,
+.xb-radio:checked:after,
+.xb-radio.xb-checked:after {
+	border-color: #212121;
+}
+/*多选选中样式*/
+.xb-checkbox:checked,
+.xb-checkbox.xb-checked {
+	background-color: #edfb3f;
+    border: solid 1px #edfb3f;
+}
+/* 多选选中时中间对号颜色*/
+.xb-checkbox:checked:before,
+.xb-checkbox.xb-checked:before,
+.xb-checkbox:checked:after,
+.xb-checkbox.xb-checked:after{
+	border-color: #212121;
+}
+/*滑动开关*/
+.xb-switch:checked {
+    border-color: #edfb3f;
+    background-color: #edfb3f;
+}
+.xb-switch:before {
+	background-color: #212121;
+}
+/*顶部导航栏*/
+.xb-bar-nav {
+	background-color: #00bbd4;
+	color: #212121;
+}
+.xb-bar-nav .xb-iconfont {
+	color: #212121;
+}
+.xb-bar-nav .xb-btn .xb-iconfont {
+	color: #212121;
+}
+/*浅色顶部导航拦*/
+.xb-bar-light {
+	color: #03a9f4;
+	background-color: #ffffff;
+}
+.xb-bar.xb-bar-light .xb-iconfont {
+	color: #03a9f4;
+}
+.xb-bar.xb-bar-light .xb-btn-outlined {
+	border-color: #03a9f4;
+}
+/*底部工具栏*/
+.xb-bar-tab {
+	background-color: #ffffff;
+	color: #757575;
+}
+/*底部工具栏选中时颜色*/
+.xb-bar-tab .active {
+	color: #039be5;
+}
+/*按钮工具栏*/
+.xb-bar-btn .xb-bar-btn-item {
+	border-color: #edfb3f;
+	color: #edfb3f;
+}
+.xb-bar-btn .xb-bar-btn-item.active {
+    background-color: #edfb3f;
+    color: #ffffff;
+}
+/*顶部导航存在按钮组工具栏时样式*/
+.xb-bar-nav .xb-bar-btn-item {
+    border-color: #ffffff;
+}
+/*浅色顶部导航存在按钮组工具栏时样式*/
+.xb-bar-nav.xb-bar-light .xb-bar-btn-item {
+    border-color: #03a9f4;
+}
+/*顶部导航存在按钮组工具栏时选中样式*/
+.xb-bar-nav .xb-bar-btn .xb-bar-btn-item.active {
+    background-color: #ffffff;
+    color: #03a9f4;
+}
+/*浅色顶部导航存在按钮组工具栏时选中样式*/
+.xb-bar-nav.xb-bar-light .xb-bar-btn .xb-bar-btn-item.active {
+    background-color: #03a9f4;
+    color: #ffffff;
+}
+/*进度条*/
+.xb-progress {
+	background-color: #f0f0f0;
+}
+/*进度条色带*/
+.xb-progress .xb-progress-bar {
+	background-color: #eefb3f;
+}
+/*滑块*/
+.xb-range input[type='range']{
+	/*滑块线条背景色*/
+    background-color: #f0f0f0;
+}
+.xb-range input[type='range']::-webkit-slider-thumb {
+	/*滑块圆圈样式*/
+	border-color: #edfb3f;
+    background-color: #edfb3f;
+}
+/*提示条*/
+.xb-tips {
+	background-color: rgba(0,0,0,.6);
+}
+/*搜索条*/
+.xb-searchbar {
+	background-color: #ebeced;
+    color: #9e9e9e;
+}
+/*列表背景色*/
+.xb-list .xb-list-item {
+	color: #d1d1d1;
+    background-color: #1a1a1a;
+}
+/*列表头部*/
+.xb-list .xb-list-header {
+	background-color: #242424;
+    color: #9e9e9e;
+}
+/*列表项内Ttitle标题*/
+.xb-list .xb-list-item-title {
+	font-size: 0.8rem;
+	color: #d1d1d1;
+}
+/*列表文本区域字体*/
+.xb-list .xb-list-item-text {
+	font-size: 0.7rem;
+	color: #d1d1d1;
+}
+/*列表右侧箭头*/
+.xb-list-item-arrow:before {
+	border-color: #edfb3f;
+}
+/*列表右侧其他信息字体颜色*/
+.xb-list .xb-list-item-right,
+.xb-list-item-title-row em {
+	color: #edfb3f;
+}
+/*列表线条颜色*/
+.xb-list:before,
+.xb-list:after,
+.xb-list .xb-list-item:after,
+.xb-list.xb-list-in .xb-list-item-inner:after {
+	background-color: #242424;
+}
+/*列表项点击颜色*/
+.xb-list .xb-list-item:active {
+    background-color: #f5f5f5;
+}
+/*媒体列表布局左（右）媒体宽度控制*/
+.xb-list .xb-list-item-media {
+    width: 4.5rem;
+}
+/*列表内label、icon字体颜色*/
+.xb-list .xb-list-item-label,
+.xb-list .xb-list-item-label-icon {
+	color: #d1d1d1;
+}
+/*卡片列表顶部字体*/
+.xb-card-list-header {
+	font-size: 0.8rem;
+	color: #212121;
+}
+/* 卡片列表内容区域*/
+.xb-card-list-content,
+.xb-card-list-content-padded {
+	font-size: 0.7rem;
+	color: #212121;
+}
+/*卡片列表底部*/
+.xb-card-list-footer {
+	font-size: 0.7rem;
+	color: #757575;
+}
+/*信息条*/
+.xb-info {
+	font-size: 0.7rem;
+    color: #757575;
+    background-color: transparent;
+}
+/*输入框类字体颜色*/
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="time"],
+input[type="number"],
+select,
+textarea {
+	color: #424242;
+}

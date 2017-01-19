@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>xbcss-sidemenu</title>
+		<link rel="stylesheet" href="../css/xb.css" />
+		<style>
+		body {
+		  width: 100%;
+		  height: 100%;
+		}
+		
+		.slideout-menu {
+		  position: fixed;
+		  top: 0;
+		  bottom: 0;
+		  width: 256px;
+		  min-height: 100vh;
+		  overflow-y: scroll;
+		  -webkit-overflow-scrolling: touch;
+		  z-index: 0;
+		  display: none;
+		}
+		
+		.slideout-menu-left {
+		  left: 0;
+		}
+		
+		.slideout-menu-right {
+		  right: 0;
+		}
+		
+		.slideout-panel {
+		  position: relative;
+		  z-index: 1;
+		  will-change: transform;
+		  background-color: #FFF; /* A background-color is required */
+		  min-height: 100vh;
+		}
+		
+		.slideout-open,
+		.slideout-open body,
+		.slideout-open .slideout-panel {
+		  overflow: hidden;
+		}
+		
+		.slideout-open .slideout-menu {
+		  display: block;
+		}
+	</style>
+</head>
+<body>
+	<nav id="menu">
+	  <header>
+	    <h2>Menu</h2>
+	  </header>
+	</nav>
+	<main id="panel">
+		<div class="xb-content">
+			<header class="xb-bar xb-bar-nav">
+			    <a class="xb-pull-left xb-btn" id="js-slideout-toggle">
+			        <span class="xb-iconfont xb-icon-x"></span>
+			    </a>
+			    <div class="xb-title">Title</div>
+			</header>
+			  <div>
+			  	<p class="xb-font-size-12">xb-font-size-12</p>
+				<p class="xb-font-size-14">xb-font-size-14</p>
+				<p class="xb-font-size-16">xb-font-size-16</p>
+				<p class="xb-font-size-18">xb-font-size-18</p>
+				<p class="xb-font-size-12">xb-font-size-12</p>
+				<p class="xb-font-size-14">xb-font-size-14</p>
+				<p class="xb-font-size-16">xb-font-size-16</p>
+				<p class="xb-font-size-18">xb-font-size-18</p>
+				<p class="xb-font-size-12">xb-font-size-12</p>
+				<p class="xb-font-size-14">xb-font-size-14</p>
+				<p class="xb-font-size-16">xb-font-size-16</p>
+				<p class="xb-font-size-18">xb-font-size-18</p>
+				<p class="xb-font-size-12">xb-font-size-12</p>
+				<p class="xb-font-size-14">xb-font-size-14</p>
+				<p class="xb-font-size-16">xb-font-size-16</p>
+				<p class="xb-font-size-18">xb-font-size-18</p>
+				<p class="xb-font-size-12">xb-font-size-12</p>
+				<p class="xb-font-size-14">xb-font-size-14</p>
+				<p class="xb-font-size-16">xb-font-size-16</p>
+				<p class="xb-font-size-18">xb-font-size-18</p>
+				<p class="xb-font-size-12">xb-font-size-12</p>
+				<p class="xb-font-size-14">xb-font-size-14</p>
+				<p class="xb-font-size-16">xb-font-size-16</p>
+				<p class="xb-font-size-18">xb-font-size-18</p>
+				<p class="xb-font-size-12">xb-font-size-12</p>
+				<p class="xb-font-size-14">xb-font-size-14</p>
+				<p class="xb-font-size-16">xb-font-size-16</p>
+				<p class="xb-font-size-18">xb-font-size-18</p>
+				<p class="xb-font-size-12">xb-font-size-12</p>
+				<p class="xb-font-size-14">xb-font-size-14</p>
+				<p class="xb-font-size-16">xb-font-size-16</p>
+				<p class="xb-font-size-18">xb-font-size-18</p>
+				<p class="xb-font-size-12">xb-font-size-12</p>
+				<p class="xb-font-size-14">xb-font-size-14</p>
+				<p class="xb-font-size-16">xb-font-size-16</p>
+				<p class="xb-font-size-18">xb-font-size-18</p>
+				<p class="xb-font-size-12">xb-font-size-12</p>
+				<p class="xb-font-size-14">xb-font-size-14</p>
+				<p class="xb-font-size-16">xb-font-size-16</p>
+				<p class="xb-font-size-18">xb-font-size-18</p>
+				<p class="xb-font-size-12">xb-font-size-12</p>
+				<p class="xb-font-size-14">xb-font-size-14</p>
+				<p class="xb-font-size-16">xb-font-size-16</p>
+				<p class="xb-font-size-18">xb-font-size-18</p>
+				<p class="xb-font-size-12">xb-font-size-12</p>
+				<p class="xb-font-size-14">xb-font-size-14</p>
+				<p class="xb-font-size-16">xb-font-size-16</p>
+				<p class="xb-font-size-18">xb-font-size-18</p>
+			  </div>
+		</div>
+	</main>
+</body>
+<script src="../js/xb.js"></script>
+<script>
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70
+  });
+document.getElementById("js-slideout-toggle").addEventListener('click',function(){
+	slideout.toggle();
+});
+</script>
+</html>

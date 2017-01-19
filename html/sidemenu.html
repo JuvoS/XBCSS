@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>xbcss-sidemenu</title>
+		<link rel="stylesheet" href="../css/xb.css" />
+		<style>
+	/*Hiding the checkbox*/
+	#sidebtn-left {display: none;}
+	#sidebtn-right {display: none;}
+	/*Content area*/
+	html,body{
+		width: 100%;
+		height: 100%;
+	}
+	.xb-side-panel {
+		width: 100%;
+		height: 100%;
+	}
+	.xb-side-panel .xb-side-content {
+		width: 100%;
+		height: 100%;
+	}
+	.xb-side-panel .xb-side-content section {
+		background-color: #43daf4;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		transition: all 0.25s;
+	}
+	/*Nav styles*/
+	.xb-side-left {
+		background: rgb(50, 60, 60);
+		width: 200px;
+		position: absolute;
+	 	left: 0;
+	  	top: 0;
+	  	bottom: 0;
+	  	padding-top: 100px;
+	}
+	.xb-side-right {
+		background: rgb(50, 60, 60);
+		width: 200px;
+		position: absolute;
+	 	right: 0;
+	  	top: 0;
+	  	bottom: 0;
+	  	padding-top: 100px;
+	}
+	/*Animation controls using checkbox hack*/
+	/*Animate content area to the right*/
+	.xb-side-content {
+		transition: all 0.4s;
+	}
+	.xb-side-content section {
+		transition: all 0.8s;
+	}
+	/*#sidebtn-left:checked ~ .xb-side-content {
+		transform: scale(.9);
+		transition: all 0.4s;
+	}*/
+	#sidebtn-left:checked ~ .xb-side-content section {
+		transform: translateX(180px);
+		transition: all 0.8s;
+	}
+	#sidebtn-right:checked ~ .xb-side-content section {
+		transform: translateX(-180px);
+		transition: all 0.8s;
+	}
+	</style>
+</head>
+<body>
+	<div class="xb-side-panel xb-content">
+		<input type="checkbox" id="sidebtn-left" />
+		<input type="checkbox" id="sidebtn-right" />
+		<div class="xb-side-left">
+			<li><a href="#"><i class="xb-iconfont xb-icon-camera"></i><b>Tasks</b></a></li>
+			<li><a href="#"><i class="xb-iconfont xb-icon-camera"></i><b>Logout</b></a></li>
+		</div>
+		<div class="xb-side-right">
+			<li><a href="#"><i class="xb-iconfont xb-icon-camera"></i><b>Tasks</b></a></li>
+			<li><a href="#"><i class="xb-iconfont xb-icon-camera"></i><b>Logout</b></a></li>
+		</div>
+		<div class="xb-side-content">
+			<section>
+				<header class="xb-bar xb-bar-nav">
+				    <label class="xb-pull-left xb-btn" for="sidebtn-left">
+				        <span class="xb-iconfont xb-icon-menu"></span>
+				    </label>
+				    <div class="xb-title">Title</div>
+				    <label class="xb-pull-right xb-btn" for="sidebtn-right">
+				        <span class="xb-iconfont xb-icon-x"></span>
+				    </label>
+				</header>
+			<label>left Click Me</label>
+			<label>right Click Me</label>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

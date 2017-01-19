@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>xbcss-themes</title>
+		<link rel="stylesheet" href="../css/xb.css" />
+	</head>
+	<body>
+		<div class="xb-content-padded">
+        <p>xb 2.0新增了主题皮肤样式，开发者可以通过修改相关属性来自定义主题样式，该演示为测试演示，修改效果并不完全。</p>
+    </div>
+    <div class="xb-content-padded">
+        <div class="xb-btn" onclick="setSkin()">设置主题</div>
+        <div class="xb-btn xb-btn-info" onclick="removeSkin()">移除主题</div>
+    </div>
+    <div class="xb-content xb-margin-b-15">
+        <ul class="xb-list">
+            <li class="xb-list-header">
+                简单的列表布局
+            </li>
+            <li class="xb-list-item">
+                <div class="xb-list-item-inner">
+                    Item1
+                </div>
+            </li>
+            <li class="xb-list-item">
+                <div class="xb-list-item-inner">
+                    Item2
+                </div>
+            </li>
+            <li class="xb-list-item">
+                <div class="xb-list-item-inner">
+                    <div class="xb-list-item-title">Item3</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="xb-content xb-margin-b-15">
+        <ul class="xb-list">
+            <li class="xb-list-header">
+                带有右侧箭头
+            </li>
+            <li class="xb-list-item xb-list-item-middle">
+                <div class="xb-list-item-inner xb-list-item-arrow">
+                    Item1
+            </li>
+            <li class="xb-list-item">
+                <div class="xb-list-item-inner xb-list-item-arrow">
+                    Item2
+                </div>
+            </li>
+            <li class="xb-list-item">
+                <div class="xb-list-item-inner xb-list-item-arrow">
+                    Item3
+                </div>
+            </li>
+        </ul>
+    </div>
+	</body>
+	<script type="text/javascript" src="../js/xb.js" ></script>
+	<script type="text/javascript">
+    var skin = new xbSkin({
+        name:"night",
+        skinPath:'../css/xb-night-themes.css',
+        default:false,
+        beginTime:"20:00",
+        endTime:"07:00"
+    })
+    function setSkin(){
+        skin.setSkin();
+    }
+    function removeSkin(){
+        skin.removeSkin();
+    }
+</script>
+</html>

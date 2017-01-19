@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<title>xbcss-sidemenu</title>
+	<link rel="stylesheet" href="../css/xb.css" />
+	<style>
+	/*Hiding the checkbox*/
+	#xb-side-btn {display: none;}
+	/*Content area*/
+	html,body{
+		width: 100%;
+		height: 100%;
+	}
+	.xb-side-panel {
+		width: 100%;
+		height: 100%;
+	}
+	.xb-side-nav {
+		background: rgb(50, 60, 60);
+		width: 200px;
+		position: relative;
+		overflow: hidden;
+		height: 100%;
+	 	left: 0;
+	  	top: 0;
+	  	bottom: 0;
+	  	padding-top: 100px;
+	}
+	.xb-side-nav section {
+		
+	}
+	.xb-side-content {
+		position:relative;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		transition: all 0.4s;
+	}
+	.xb-side-content section {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		/*position: relative;*/
+		transition: all 0.8s;
+	}
+	.xb-side-content header {
+		position: fixed;
+		left: 0;
+	}
+	.xb-side-info {
+		margin-top: 2.25rem;
+		background-color: #c4a4ed;
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		/*height: 100%;*/
+	}
+	#xb-side-btn:checked ~ .xb-side-content {
+		transform: scale(.9);
+		transition: all 0.4s;
+	}
+	#xb-side-btn:checked ~ .xb-side-content section {
+		transform: translateX(160px);
+		transition: all 0.8s;
+	}
+	@media screen and (-webkit-min-device-pixel-ratio:1.5) {
+		.xb-side-nav {
+			background: rgb(50, 60, 60);
+			width: 80%;
+			position: absolute;
+		 	left: 0;
+		  	top: 0;
+		  	bottom: 0;
+		  	padding-top: 100px;
+		}
+		#xb-side-btn:checked ~ .xb-side-content section {
+			transform: translateX(70%);
+			transition: all 0.8s;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="xb-side-panel xb-content">
+		<input type="checkbox" id="xb-side-btn" class="xb-side-btn"/>
+		<!--左侧菜单栏-->
+		<div class="xb-side-nav">
+			<section>
+				<p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p>
+			<p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p><p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p><p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p><p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p><p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p><p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p><p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p><p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p><p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p><p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p><p class="xb-font-size-12">xb-font-size-12</p>
+			<p class="xb-font-size-14">xb-font-size-14</p>
+			<p class="xb-font-size-16">xb-font-size-16</p>
+			<p class="xb-font-size-18">xb-font-size-18</p>
+			</section>
+		</div>
+		<!--主要内容区域-->
+		<div class="xb-side-content">
+			<section>
+				<header class="xb-bar xb-bar-nav xb-bar-light">
+				    <a class="xb-pull-left xb-btn">
+				    	<label for="xb-side-btn" class="xb-iconfont xb-icon-menu"></label>
+				    </a>
+				    <div class="xb-title">XBCSS</div>
+				</header>
+				<div class="xb-side-info">
+					<p class="xb-font-size-12">xb-font-size-12</p>
+					<p class="xb-font-size-14">xb-font-size-14</p>
+					<p class="xb-font-size-16">xb-font-size-16</p>
+					<p class="xb-font-size-18">xb-font-size-18</p>
+					<p class="xb-font-size-14 xb-color-default">xb-color-default</p>
+					<p class="xb-font-size-14 xb-color-white">xb-color-white</p>
+					<p class="xb-font-size-14 xb-color-info">xb-color-info</p>
+					<p class="xb-font-size-14 xb-color-primary">xb-color-primary</p>
+					<p class="xb-font-size-14 xb-color-success">xb-color-success</p>
+					<p class="xb-font-size-14 xb-color-warning">xb-color-warning</p>
+					<p class="xb-font-size-14 xb-color-danger">xb-color-danger</p>
+					<p class="xb-font-size-14 xb-color-pink">xb-color-pink</p>
+					<p class="xb-font-size-14 xb-color-purple">xb-color-purple</p>
+					<p class="xb-font-size-14 xb-color-indigo">xb-color-indigo</p>
+					<p class="xb-font-size-12">xb-font-size-12</p>
+					<p class="xb-font-size-14">xb-font-size-14</p>
+					<p class="xb-font-size-16">xb-font-size-16</p>
+					<p class="xb-font-size-18">xb-font-size-18</p>
+					<p class="xb-font-size-14 xb-color-default">xb-color-default</p>
+					<p class="xb-font-size-14 xb-color-white">xb-color-white</p>
+					<p class="xb-font-size-14 xb-color-info">xb-color-info</p>
+					<p class="xb-font-size-14 xb-color-primary">xb-color-primary</p>
+					<p class="xb-font-size-14 xb-color-success">xb-color-success</p>
+					<p class="xb-font-size-14 xb-color-warning">xb-color-warning</p>
+					<p class="xb-font-size-14 xb-color-danger">xb-color-danger</p>
+					<p class="xb-font-size-14 xb-color-pink">xb-color-pink</p>
+					<p class="xb-font-size-14 xb-color-purple">xb-color-purple</p>
+					<p class="xb-font-size-14 xb-color-indigo">xb-color-indigo</p>
+					<p class="xb-font-size-12">xb-font-size-12</p>
+					<p class="xb-font-size-14">xb-font-size-14</p>
+					<p class="xb-font-size-16">xb-font-size-16</p>
+					<p class="xb-font-size-18">xb-font-size-18</p>
+					<p class="xb-font-size-14 xb-color-default">xb-color-default</p>
+					<p class="xb-font-size-14 xb-color-white">xb-color-white</p>
+					<p class="xb-font-size-14 xb-color-info">xb-color-info</p>
+					<p class="xb-font-size-14 xb-color-primary">xb-color-primary</p>
+					<p class="xb-font-size-14 xb-color-success">xb-color-success</p>
+					<p class="xb-font-size-14 xb-color-warning">xb-color-warning</p>
+					<p class="xb-font-size-14 xb-color-danger">xb-color-danger</p>
+					<p class="xb-font-size-14 xb-color-pink">xb-color-pink</p>
+					<p class="xb-font-size-14 xb-color-purple">xb-color-purple</p>
+					<p class="xb-font-size-14 xb-color-indigo">xb-color-indigo</p>
+					<p class="xb-font-size-12">xb-font-size-12</p>
+					<p class="xb-font-size-14">xb-font-size-14</p>
+					<p class="xb-font-size-16">xb-font-size-16</p>
+					<p class="xb-font-size-18">xb-font-size-18</p>
+					<p class="xb-font-size-14 xb-color-default">xb-color-default</p>
+					<p class="xb-font-size-14 xb-color-white">xb-color-white</p>
+					<p class="xb-font-size-14 xb-color-info">xb-color-info</p>
+					<p class="xb-font-size-14 xb-color-primary">xb-color-primary</p>
+					<p class="xb-font-size-14 xb-color-success">xb-color-success</p>
+					<p class="xb-font-size-14 xb-color-warning">xb-color-warning</p>
+					<p class="xb-font-size-14 xb-color-danger">xb-color-danger</p>
+					<p class="xb-font-size-14 xb-color-pink">xb-color-pink</p>
+					<p class="xb-font-size-14 xb-color-purple">xb-color-purple</p>
+					<p class="xb-font-size-14 xb-color-indigo">xb-color-indigo</p>
+					<p class="xb-font-size-12">xb-font-size-12</p>
+					<p class="xb-font-size-14">xb-font-size-14</p>
+					<p class="xb-font-size-16">xb-font-size-16</p>
+					<p class="xb-font-size-18">xb-font-size-18</p>
+					<p class="xb-font-size-14 xb-color-default">xb-color-default</p>
+					<p class="xb-font-size-14 xb-color-white">xb-color-white</p>
+					<p class="xb-font-size-14 xb-color-info">xb-color-info</p>
+					<p class="xb-font-size-14 xb-color-primary">xb-color-primary</p>
+					<p class="xb-font-size-14 xb-color-success">xb-color-success</p>
+					<p class="xb-font-size-14 xb-color-warning">xb-color-warning</p>
+					<p class="xb-font-size-14 xb-color-danger">xb-color-danger</p>
+					<p class="xb-font-size-14 xb-color-pink">xb-color-pink</p>
+					<p class="xb-font-size-14 xb-color-purple">xb-color-purple</p>
+					<p class="xb-font-size-14 xb-color-indigo">xb-color-indigo</p><p class="xb-font-size-12">xb-font-size-12</p>
+					<p class="xb-font-size-14">xb-font-size-14</p>
+					<p class="xb-font-size-16">xb-font-size-16</p>
+					<p class="xb-font-size-18">xb-font-size-18</p>
+					<p class="xb-font-size-14 xb-color-default">xb-color-default</p>
+					<p class="xb-font-size-14 xb-color-white">xb-color-white</p>
+					<p class="xb-font-size-14 xb-color-info">xb-color-info</p>
+					<p class="xb-font-size-14 xb-color-primary">xb-color-primary</p>
+					<p class="xb-font-size-14 xb-color-success">xb-color-success</p>
+					<p class="xb-font-size-14 xb-color-warning">xb-color-warning</p>
+					<p class="xb-font-size-14 xb-color-danger">xb-color-danger</p>
+					<p class="xb-font-size-14 xb-color-pink">xb-color-pink</p>
+					<p class="xb-font-size-14 xb-color-purple">xb-color-purple</p>
+					<p class="xb-font-size-14 xb-color-indigo">xb-color-indigo</p>
+					<p class="xb-font-size-12">xb-font-size-12</p>
+					<p class="xb-font-size-14">xb-font-size-14</p>
+					<p class="xb-font-size-16">xb-font-size-16</p>
+					<p class="xb-font-size-18">xb-font-size-18</p>
+					<p class="xb-font-size-14 xb-color-default">xb-color-default</p>
+					<p class="xb-font-size-14 xb-color-white">xb-color-white</p>
+					<p class="xb-font-size-14 xb-color-info">xb-color-info</p>
+					<p class="xb-font-size-14 xb-color-primary">xb-color-primary</p>
+					<p class="xb-font-size-14 xb-color-success">xb-color-success</p>
+					<p class="xb-font-size-14 xb-color-warning">xb-color-warning</p>
+					<p class="xb-font-size-14 xb-color-danger">xb-color-danger</p>
+					<p class="xb-font-size-14 xb-color-pink">xb-color-pink</p>
+					<p class="xb-font-size-14 xb-color-purple">xb-color-purple</p>
+					<p class="xb-font-size-14 xb-color-indigo">xb-color-indigo</p><p class="xb-font-size-12">xb-font-size-12</p>
+					<p class="xb-font-size-14">xb-font-size-14</p>
+					<p class="xb-font-size-16">xb-font-size-16</p>
+					<p class="xb-font-size-18">xb-font-size-18</p>
+					<p class="xb-font-size-14 xb-color-default">xb-color-default</p>
+					<p class="xb-font-size-14 xb-color-white">xb-color-white</p>
+					<p class="xb-font-size-14 xb-color-info">xb-color-info</p>
+					<p class="xb-font-size-14 xb-color-primary">xb-color-primary</p>
+					<p class="xb-font-size-14 xb-color-success">xb-color-success</p>
+					<p class="xb-font-size-14 xb-color-warning">xb-color-warning</p>
+					<p class="xb-font-size-14 xb-color-danger">xb-color-danger</p>
+					<p class="xb-font-size-14 xb-color-pink">xb-color-pink</p>
+					<p class="xb-font-size-14 xb-color-purple">xb-color-purple</p>
+					<p class="xb-font-size-14 xb-color-indigo">xb-color-indigo</p>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

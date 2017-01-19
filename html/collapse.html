@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>xbcss-collapse</title>
+		<link rel="stylesheet" href="../css/xb.css" />
+	</head>
+	<body>
+		<section class="xb-content-padded">
+        <ul class="xb-list xb-collapse xb-border">
+            <div class="xb-collapse-item">
+                <li class="xb-list-item xb-collapse-header">
+                    <div class="xb-list-item-inner">
+                        <div class="xb-list-item-title">参数说明</div>
+                        <div class="xb-list-item-right">
+                            <i class="xb-iconfont xb-icon-down xb-collapse-arrow"></i>
+                        </div>
+                    </div>
+                </li>
+                <div class="xb-collapse-content xb-padded-15 xb-border-b">
+                    配置autoHide可以控制是否自动隐藏已经展开的容器
+                </div>
+            </div>
+            <div class="xb-collapse-item">
+                <li class="xb-list-item xb-collapse-header">
+                    <div class="xb-list-item-inner">
+                        <div class="xb-list-item-title">折叠菜单标题</div>
+                        <div class="xb-list-item-right">
+                            <i class="xb-iconfont xb-icon-down xb-collapse-arrow"></i>
+                        </div>
+                    </div>
+                </li>
+                <div class="xb-collapse-content">
+                    <li class="xb-list-item">
+                        <div class="xb-list-item-inner">
+                            <div class="xb-list-item-title">Item1</div>
+                        </div>
+                    </li>
+                    <li class="xb-list-item">
+                        <div class="xb-list-item-inner">
+                            <div class="xb-list-item-title">Item2</div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+            <div class="xb-collapse-item">
+                <li class="xb-list-item xb-collapse-header" tapmode>
+                    <div class="xb-list-item-inner">
+                        <div class="xb-list-item-title">图文混排</div>
+                        <div class="xb-list-item-right">
+                            <i class="xb-iconfont xb-icon-down xb-collapse-arrow"></i>
+                        </div>
+                    </div>
+                </li>
+                <div class="xb-collapse-content">
+                    <li class="xb-list-item" style="display: block;">
+                        <div class="xb-media-list-item-inner">
+                            <div class="xb-list-item-media">
+                                <img src="../img/shot-0.jpg">
+                            </div>
+                            <div class="xb-list-item-inner xb-padded-t-10 xb-padded-b-10" style="display: block;">
+                                <div class="xb-list-item-text">
+                                    <div class="xb-list-item-title">带有媒体的列表二</div>
+                                    <div class="xb-list-item-right">08:00</div>
+                                </div>
+                                <div class="xb-list-item-text">
+                                    <div class="xb-ellipsis-2">这里是内容区域，新版中的列表布局可以很轻松的帮助开发者完成常见列表样式。</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="xb-list-item">
+                        <div class="xb-list-item-inner xb-padded-t-10 xb-padded-b-10" style="display: block;">
+                            <div class="xb-list-item-title">多张图片列表一</div>
+                            <p>借助栅格来实现图片列表</p>
+                            <div class="xb-row xb-row-padded">
+                                <div class="xb-col-xs-4">
+                                    <img src="../img/shot-0.jpg"/>
+                                </div>
+                                <div class="xb-col-xs-4">
+                                    <img src="../img/shot-0.jpg" />
+                                </div>
+                                <div class="xb-col-xs-4">
+                                    <img src="../img/shot-0.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </ul>
+    </section>
+    <section class="xb-content-padded">
+        <div class="xb-card-list">
+            <div class="xb-card-list-header xb-collapse-header">
+                <div>卡片布局中使用折叠菜单</div>
+                <i class="xb-iconfont xb-icon-down xb-collapse-arrow"></i>
+            </div>
+            <div class="xb-card-list-content-padded xb-collapse-content">
+                <div class="xb-row xb-row-padded">
+                    <div class="xb-col-xs-4">
+                        <img src="../img/shot-0.jpg" />
+                    </div>
+                    <div class="xb-col-xs-4">
+                        <img src="../img/shot-0.jpg" />
+                    </div>
+                    <div class="xb-col-xs-4">
+                        <img src="../img/shot-0.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	</body>
+<script type="text/javascript" src="../js/xb.js" ></script>
+<script type="text/javascript">
+    var collapse = new xbCollapse({
+        autoHide:true //是否自动隐藏已经展开的容器
+    });
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>xbcss-headtab</title>
+		<link rel="stylesheet" href="../css/xb.css" />
+	</head>
+	<body>
+		<div class="xb-tab" id="tab">
+	        <div class="xb-tab-item xb-active">Item1</div>
+	        <div class="xb-tab-item"><div></div>Item2</div>
+	        <div class="xb-tab-item">Item3</div>
+	        <div class="xb-tab-item">Item4</div>
+	    </div>
+	</body>
+	<script type="text/javascript" src="../js/xb.js" ></script>
+<script type="text/javascript">
+    var tab = new xbTab({
+        element:document.getElementById("tab"),
+    },function(ret){
+        console.log(ret)
+    });
+</script>
+</html>

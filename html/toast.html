@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>xbcss-toast</title>
+		<link rel="stylesheet" href="../css/xb.css" />
+	<style type="text/css">
+    .xb-btn {
+        margin: 20px 0;
+    }
+    p {
+        margin-top: 25px;
+    }
+    </style>
+</head>
+<body>
+    <p class="xb-text-center">TOAST</p>
+    <div class="xb-content-padded">
+        <div class="xb-btn xb-btn-block xb-btn-info" tapmode onclick="showDefault('success')">默认样式（toast）</div>
+        <div class="xb-btn xb-btn-block xb-btn-success" tapmode onclick="showDefault('fail')">失败（toast）</div>
+        <div class="xb-btn xb-btn-block xb-btn-success" tapmode onclick="showDefault('custom')">自定义</div>
+        <div class="xb-btn xb-btn-block xb-btn-warning" tapmode onclick="showDefault('loading')">弹出loading样式（toast）</div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/xb.js" ></script>
+<script type="text/javascript">
+    var toast = new xbToast();
+    function showDefault(type){
+        switch (type) {
+            case "success":
+                toast.success({
+                    title:"提交成功",
+                    duration:2000
+                });
+                break;
+            case "fail":
+                toast.fail({
+                    title:"提交失败",
+                    duration:2000
+                });
+                break;
+            case "custom":
+                toast.custom({
+                    title:"提交成功",
+                    html:'<i class="xb-iconfont xb-icon-laud"></i>',
+                    duration:2000
+                });
+                break;
+            case "loading":
+                toast.loading({
+                    title:"加载中",
+                    duration:2000
+                },function(ret){
+                    console.log(ret);
+                    setTimeout(function(){
+                        toast.hide();
+                    }, 3000)
+                });
+                break;
+            default:
+                // statements_def
+                break;
+        }
+    }
+
+</script>
+</html>

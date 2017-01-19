@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>xbcss-list-swipe</title>
+		<link rel="stylesheet" href="../css/xb.css" />
+	</head>
+	<body>
+		<div class="xb-content">
+			<div class="xb-container">
+				<div class="xb-content">
+			        <ul class="xb-list">
+			            <li class="xb-list-header">
+			                简单的列表布局
+			            </li>
+			            <li class="xb-list-item">
+			                <div class="xb-list-item-inner xb-swipe-handle">
+			                    右滑显示菜单
+			                </div>
+			                <div class="xb-swipe-btn">
+			                    <div class="xb-btn xb-btn-danger">删除</div>
+			                </div>
+			            </li>
+			            <li class="xb-list-item">
+			                <div class="xb-list-item-inner xb-swipe-handle" >
+			                    右滑显示多个菜单
+			                </div>
+			                <div class="xb-swipe-btn">
+			                    <div class="xb-btn xb-btn-info">关闭</div>
+			                    <div class="xb-btn xb-btn-danger">删除</div>
+			                </div>
+			            </li>
+			            <li class="xb-list-item" tapmode>
+			                <div class="xb-list-item-inner xb-swipe-handle">
+			                    右滑显示多个菜单
+			                </div>
+			                <div class="xb-swipe-btn">
+			                    <div class="xb-btn xb-btn-info">关闭</div>
+			                    <div class="xb-btn xb-btn-danger">删除</div>
+			                </div>
+			            </li>
+			        </ul>
+			    </div>
+			</div>
+		</div>
+	</body>
+<script type="text/javascript" src="../js/xb.js"></script>
+<script type="text/javascript">
+    // alert(document.body.offsetHeight)
+    var swipe = new xbListSwipe(function(ret){
+        // console.log(ret)
+    });
+</script>
+</html>

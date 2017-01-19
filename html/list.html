@@ -6,11 +6,22 @@
     	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
 		<title>xbcss-list</title>
 		<link rel="stylesheet" href="../css/xb.css" />
+		<style type="text/css">
+        #demo {
+            position: fixed;
+            padding: 0.5rem 0.2rem;
+            right: 0;
+            bottom: 0.75rem;
+            background-color: #e0e0e0;
+            color: #212121;
+            z-index: 999;
+        }
+    </style>
 	</head>
 	<body>
 		<div class="xb-content">
 			<div class="xb-container">
-				<div class="xb-content-padded">
+				<div class="xb-content-padded"><div id="demo">滚动高度：</div>
 					<ul class="xb-list xb-form-list">
 				        <li class="xb-list-header">带有输入框</li>
 				        <li class="xb-list-item">
@@ -347,4 +358,18 @@
 			</div>
 		</div>
 	</body>
+<script type="text/javascript" src="../js/xb.js" ></script>
+<script type="text/javascript">
+    var scroll = new xbScroll({
+        listen:true,
+        distance:200 //判断到达底部的距离，isToBottom为true
+    },function(ret){
+        if(ret.isToBottom){
+            document.getElementById("demo").textContent = "已到达底部";
+        }else{
+            document.getElementById("demo").textContent = "滚动高度："+ret.scrollTop;
+        }
+
+    });
+</script>
 </html>
